@@ -87,6 +87,12 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
         return insetForSection
     }
 
+    // MARK: - Content Container Methods
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
+
     // MARK: - View Methods
 
     private func setupView() {
