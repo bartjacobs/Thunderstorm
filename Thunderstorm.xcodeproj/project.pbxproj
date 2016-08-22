@@ -11,6 +11,9 @@
 		CC52A5411D6AA8DB00C1FC43 /* NowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52A5401D6AA8DB00C1FC43 /* NowViewController.swift */; };
 		CC52A5441D6AA8F400C1FC43 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52A5431D6AA8F400C1FC43 /* DayViewController.swift */; };
 		CC52A5471D6AA91300C1FC43 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52A5461D6AA91300C1FC43 /* WeekViewController.swift */; };
+		CC52A54C1D6AAAC300C1FC43 /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52A5491D6AAAC300C1FC43 /* DayCollectionViewCell.swift */; };
+		CC52A54D1D6AAAC300C1FC43 /* NowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52A54A1D6AAAC300C1FC43 /* NowCollectionViewCell.swift */; };
+		CC52A54E1D6AAAC300C1FC43 /* WeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52A54B1D6AAAC300C1FC43 /* WeekCollectionViewCell.swift */; };
 		CC5E36541D618B48000259C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E36531D618B48000259C1 /* AppDelegate.swift */; };
 		CC5E365B1D618B48000259C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5E365A1D618B48000259C1 /* Assets.xcassets */; };
 		CC5E36691D618B48000259C1 /* ThunderstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E36681D618B48000259C1 /* ThunderstormTests.swift */; };
@@ -33,6 +36,9 @@
 		CC52A5401D6AA8DB00C1FC43 /* NowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowViewController.swift; sourceTree = "<group>"; };
 		CC52A5431D6AA8F400C1FC43 /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		CC52A5461D6AA91300C1FC43 /* WeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
+		CC52A5491D6AAAC300C1FC43 /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC52A54A1D6AAAC300C1FC43 /* NowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC52A54B1D6AAAC300C1FC43 /* WeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC5E36501D618B48000259C1 /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5E36531D618B48000259C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC5E365A1D618B48000259C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				CC52A5321D6A9D3C00C1FC43 /* RootViewController.swift */,
+				CC52A5481D6AAA9F00C1FC43 /* Collection View Cells */,
 			);
 			path = "Root View Controller";
 			sourceTree = "<group>";
@@ -92,6 +99,16 @@
 				CC52A5461D6AA91300C1FC43 /* WeekViewController.swift */,
 			);
 			path = "Week View Controller";
+			sourceTree = "<group>";
+		};
+		CC52A5481D6AAA9F00C1FC43 /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CC52A5491D6AAAC300C1FC43 /* DayCollectionViewCell.swift */,
+				CC52A54A1D6AAAC300C1FC43 /* NowCollectionViewCell.swift */,
+				CC52A54B1D6AAAC300C1FC43 /* WeekCollectionViewCell.swift */,
+			);
+			path = "Collection View Cells";
 			sourceTree = "<group>";
 		};
 		CC5E36471D618B48000259C1 = {
@@ -283,9 +300,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC52A5471D6AA91300C1FC43 /* WeekViewController.swift in Sources */,
+				CC52A54C1D6AAAC300C1FC43 /* DayCollectionViewCell.swift in Sources */,
+				CC52A54E1D6AAAC300C1FC43 /* WeekCollectionViewCell.swift in Sources */,
 				CC52A5411D6AA8DB00C1FC43 /* NowViewController.swift in Sources */,
 				CC52A5331D6A9D3C00C1FC43 /* RootViewController.swift in Sources */,
 				CC5E36541D618B48000259C1 /* AppDelegate.swift in Sources */,
+				CC52A54D1D6AAAC300C1FC43 /* NowCollectionViewCell.swift in Sources */,
 				CC52A5441D6AA8F400C1FC43 /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
