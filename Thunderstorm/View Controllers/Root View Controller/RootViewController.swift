@@ -20,6 +20,19 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
     }
 
+    var aspectRatio: CGFloat {
+        switch traitCollection.horizontalSizeClass {
+        case .compact:
+            return 1.0
+        default:
+            return 1.0 / 3.0
+        }
+    }
+
+    let minimumInteritemSpacingForSection: CGFloat = 0.0
+    let minimumLineSpacingForSection: CGFloat = 0.0
+    let insetForSection = UIEdgeInsets()
+
     @IBOutlet var collectionView: UICollectionView!
 
     // MARK: - View Life Cycle
@@ -52,6 +65,26 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
             // Dequeue Reusable Cell
             return collectionView.dequeueReusableCell(withReuseIdentifier: WeekCollectionViewCell.ReuseIdentifier, for: indexPath as IndexPath)
         }
+    }
+
+    // MARK: - Collection View Delegate Flow Layout Methods
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let bounds = collectionView.bounds
+
+        return CGSize(width: (bounds.width * aspectRatio), height: bounds.height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return minimumInteritemSpacingForSection
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return minimumLineSpacingForSection
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return insetForSection
     }
 
     // MARK: - View Methods
