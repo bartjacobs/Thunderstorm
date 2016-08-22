@@ -37,13 +37,21 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // Dequeue Reusable Cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "someCell", for: indexPath)
+        guard let type = RootViewType(rawValue: indexPath.item) else {
+            return UICollectionViewCell()
+        }
 
-        // Configure Cell
-        cell.contentView.backgroundColor = .green
-
-        return cell
+        switch type {
+        case .Day:
+            // Dequeue Reusable Cell
+            return collectionView.dequeueReusableCell(withReuseIdentifier: NowCollectionViewCell.ReuseIdentifier, for: indexPath as IndexPath)
+        case .Now:
+            // Dequeue Reusable Cell
+            return collectionView.dequeueReusableCell(withReuseIdentifier: DayCollectionViewCell.ReuseIdentifier, for: indexPath as IndexPath)
+        case .Week:
+            // Dequeue Reusable Cell
+            return collectionView.dequeueReusableCell(withReuseIdentifier: WeekCollectionViewCell.ReuseIdentifier, for: indexPath as IndexPath)
+        }
     }
 
     // MARK: - View Methods
@@ -55,7 +63,9 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
     // MARK: -
 
     private func setupCollectionView() {
-        collectionView.register(UICollectionViewCell.classForCoder(), forCellWithReuseIdentifier: "someCell")
+        collectionView.register(NowCollectionViewCell.classForCoder(), forCellWithReuseIdentifier: NowCollectionViewCell.ReuseIdentifier)
+        collectionView.register(DayCollectionViewCell.classForCoder(), forCellWithReuseIdentifier: DayCollectionViewCell.ReuseIdentifier)
+        collectionView.register(WeekCollectionViewCell.classForCoder(), forCellWithReuseIdentifier: WeekCollectionViewCell.ReuseIdentifier)
     }
 
 }
