@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UR1-vH-Ub6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UR1-vH-Ub6">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="oMp-Or-pM4">
             <objects>
-                <viewController id="UR1-vH-Ub6" customClass="ViewController" customModule="Thunderstorm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UR1-vH-Ub6" customClass="RootViewController" customModule="Thunderstorm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C04-mJ-Of2"/>
                         <viewControllerLayoutGuide type="bottom" id="YXW-ik-gcN"/>
@@ -17,12 +17,37 @@
                     <view key="view" contentMode="scaleToFill" id="JPe-mH-TVp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cJS-fP-14p">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oYl-wy-Mz2">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="UR1-vH-Ub6" id="emP-W5-YnY"/>
+                                    <outlet property="delegate" destination="UR1-vH-Ub6" id="D8O-65-PvI"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cJS-fP-14p" firstAttribute="top" secondItem="JPe-mH-TVp" secondAttribute="top" id="Dxb-66-k0h"/>
+                            <constraint firstAttribute="trailing" secondItem="cJS-fP-14p" secondAttribute="trailing" id="ElG-Df-Ywg"/>
+                            <constraint firstItem="YXW-ik-gcN" firstAttribute="top" secondItem="cJS-fP-14p" secondAttribute="bottom" id="bvK-pS-oCv"/>
+                            <constraint firstItem="cJS-fP-14p" firstAttribute="leading" secondItem="JPe-mH-TVp" secondAttribute="leading" id="ncv-Ul-bi2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="cJS-fP-14p" id="zE5-51-zeN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZf-oh-nub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-969" y="130"/>
+            <point key="canvasLocation" x="-1194.4000000000001" y="115.59220389805098"/>
         </scene>
     </scenes>
 </document>

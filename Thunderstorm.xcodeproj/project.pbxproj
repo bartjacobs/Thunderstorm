@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC52A5331D6A9D3C00C1FC43 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52A5321D6A9D3C00C1FC43 /* RootViewController.swift */; };
 		CC5E36541D618B48000259C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E36531D618B48000259C1 /* AppDelegate.swift */; };
-		CC5E36561D618B48000259C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E36551D618B48000259C1 /* ViewController.swift */; };
 		CC5E365B1D618B48000259C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5E365A1D618B48000259C1 /* Assets.xcassets */; };
 		CC5E36691D618B48000259C1 /* ThunderstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E36681D618B48000259C1 /* ThunderstormTests.swift */; };
 		CC5E36771D619114000259C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5E36761D619114000259C1 /* LaunchScreen.storyboard */; };
@@ -26,9 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC52A5321D6A9D3C00C1FC43 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		CC5E36501D618B48000259C1 /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5E36531D618B48000259C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC5E36551D618B48000259C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC5E365A1D618B48000259C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5E365F1D618B48000259C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5E36641D618B48000259C1 /* ThunderstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThunderstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC52A5311D6A9D0800C1FC43 /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC52A5321D6A9D3C00C1FC43 /* RootViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
 		CC5E36471D618B48000259C1 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +114,7 @@
 		CC5E36741D6190A9000259C1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CC5E36551D618B48000259C1 /* ViewController.swift */,
+				CC52A5311D6A9D0800C1FC43 /* Root View Controller */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -241,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5E36561D618B48000259C1 /* ViewController.swift in Sources */,
+				CC52A5331D6A9D3C00C1FC43 /* RootViewController.swift in Sources */,
 				CC5E36541D618B48000259C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
