@@ -20,6 +20,7 @@
 		CC5E36771D619114000259C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5E36761D619114000259C1 /* LaunchScreen.storyboard */; };
 		CC5E36791D61911D000259C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5E36781D61911D000259C1 /* Main.storyboard */; };
 		CCAE7AFB1D72FDD400F49A18 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE7AFA1D72FDD400F49A18 /* Configuration.swift */; };
+		CCAE7AFE1D73123900F49A18 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE7AFD1D73123900F49A18 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CC5E36761D619114000259C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5E36781D61911D000259C1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CCAE7AFA1D72FDD400F49A18 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CCAE7AFD1D73123900F49A18 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				CCAE7AF91D72FD9E00F49A18 /* Configuration */,
 				CC5E36751D6190D7000259C1 /* Storyboards */,
 				CC5E367A1D619400000259C1 /* Resources */,
+				CCAE7AFC1D73121100F49A18 /* Managers */,
 				CC5E367B1D61942C000259C1 /* Supporting Files */,
 			);
 			path = Thunderstorm;
@@ -203,6 +206,14 @@
 				CCAE7AFA1D72FDD400F49A18 /* Configuration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CCAE7AFC1D73121100F49A18 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE7AFD1D73123900F49A18 /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC52A5471D6AA91300C1FC43 /* WeekViewController.swift in Sources */,
+				CCAE7AFE1D73123900F49A18 /* DataManager.swift in Sources */,
 				CC52A54C1D6AAAC300C1FC43 /* DayCollectionViewCell.swift in Sources */,
 				CC52A54E1D6AAAC300C1FC43 /* WeekCollectionViewCell.swift in Sources */,
 				CCAE7AFB1D72FDD400F49A18 /* Configuration.swift in Sources */,
