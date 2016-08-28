@@ -8,6 +8,13 @@
 
 import Foundation
 
+struct Defaults {
+
+    static let Latitude: Double = 37.8267
+    static let Longitude: Double = -122.423
+
+}
+
 struct API {
 
     static let APIKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
