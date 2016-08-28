@@ -35,12 +35,19 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
 
     @IBOutlet var collectionView: UICollectionView!
 
+    private let dataManager = DataManager(baseURL: API.AuthenticatedBaseURL)
+    
     // MARK: - View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
+
+        // Fetch Weather Data
+        dataManager.weatherDataForLocation(latitude: Defaults.Latitude, longitude: Defaults.Longitude) { (response, error) in
+            print(response)
+        }
     }
 
     // MARK: - Collection View Data Source Methods
