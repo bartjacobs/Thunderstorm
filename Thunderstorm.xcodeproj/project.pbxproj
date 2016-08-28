@@ -19,6 +19,7 @@
 		CC5E36691D618B48000259C1 /* ThunderstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E36681D618B48000259C1 /* ThunderstormTests.swift */; };
 		CC5E36771D619114000259C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5E36761D619114000259C1 /* LaunchScreen.storyboard */; };
 		CC5E36791D61911D000259C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5E36781D61911D000259C1 /* Main.storyboard */; };
+		CCAE7AFB1D72FDD400F49A18 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE7AFA1D72FDD400F49A18 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CC5E366A1D618B48000259C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5E36761D619114000259C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5E36781D61911D000259C1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CCAE7AFA1D72FDD400F49A18 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				CC5E36731D618D64000259C1 /* Application Delegate */,
 				CC5E36741D6190A9000259C1 /* View Controllers */,
+				CCAE7AF91D72FD9E00F49A18 /* Configuration */,
 				CC5E36751D6190D7000259C1 /* Storyboards */,
 				CC5E367A1D619400000259C1 /* Resources */,
 				CC5E367B1D61942C000259C1 /* Supporting Files */,
@@ -192,6 +195,14 @@
 				CC5E365F1D618B48000259C1 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCAE7AF91D72FD9E00F49A18 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE7AFA1D72FDD400F49A18 /* Configuration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 				CC52A5471D6AA91300C1FC43 /* WeekViewController.swift in Sources */,
 				CC52A54C1D6AAAC300C1FC43 /* DayCollectionViewCell.swift in Sources */,
 				CC52A54E1D6AAAC300C1FC43 /* WeekCollectionViewCell.swift in Sources */,
+				CCAE7AFB1D72FDD400F49A18 /* Configuration.swift in Sources */,
 				CC52A5411D6AA8DB00C1FC43 /* NowViewController.swift in Sources */,
 				CC52A5331D6A9D3C00C1FC43 /* RootViewController.swift in Sources */,
 				CC5E36541D618B48000259C1 /* AppDelegate.swift in Sources */,
