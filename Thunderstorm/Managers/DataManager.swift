@@ -16,7 +16,7 @@ enum DataManagerError: Error {
     
 }
 
-class DataManager {
+final class DataManager {
 
     typealias WeatherDataCompletion = (AnyObject?, DataManagerError?) -> ()
 
